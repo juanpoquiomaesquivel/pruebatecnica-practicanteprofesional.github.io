@@ -1,0 +1,104 @@
+/* Características del prestamo banbif */
+
+.banbif-qualities-panel div:nth-child(2) {
+    padding: 34px 13px 15px 24px;
+}
+
+ul.banbif-qualities {
+    padding: 0;
+    margin-bottom: 8px;
+}
+
+ul.banbif-qualities li {
+    list-style: none;
+    display: flex;
+    column-gap: 16px;
+}
+
+ul.banbif-qualities li svg {
+    width: 24px;
+    height: 24px;
+    flex-shrink: 0;
+}
+
+ul.banbif-qualities li p {
+    color: #004470;
+    font-family: "Lato", "Courier New", Courier, monospace;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 21.6px;
+}
+
+ul.banbif-qualities li p span {
+    font-weight: 800;
+}
+
+small.important-note {
+    color: rgba(0, 68, 112, 0.5);
+
+    width: 315px;
+    height: 41px;
+
+    font-family: "Lato", "Courier New", Courier, monospace;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 600;
+}
+
+@media (min-width: 576px) {
+    small.important-note {
+        width: 361px;
+        height: 41px;
+        font-size: 14px;
+    }
+}
+
+/* Carrousel */
+#carrousel .carousel-indicators button {
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+}
+
+#carrousel .carousel-inner {
+    height: 173px;
+    background: linear-gradient(
+        270deg,
+        #0370f5 15.24%,
+        #20a6ff 71.77%,
+        #20a6ff 111.26%
+    );
+}
+
+#carrousel .carousel-inner .carousel-item {
+    padding: 41px 63px;
+}
+
+#carrousel .carousel-inner .carousel-item > div {
+    display: flex;
+    justify-content: center;
+    column-gap: 18px;
+}
+
+#carrousel .carousel-inner .carousel-item svg {
+    width: 32px !important;
+    height: 32px !important;
+    background-color: #fff;
+    border-radius: 50%;
+    padding: 4px;
+}
+
+#carrousel .carousel-inner .carousel-item p {
+    color: #fff;
+    width: 261px;
+    font-family: "Lato", "Courier New", Courier, monospace;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+#carrousel .carousel-inner .carousel-item p span {
+    font-weight: 800;
+}

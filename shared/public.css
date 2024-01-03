@@ -1,0 +1,129 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+
+/* Estilos de cabecera */
+#banbif-header {
+    height: 80px;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    position: relative;
+}
+
+#banbif-header a picture > * {
+    height: 24px;
+    position: absolute;
+    left: 21px;
+    user-select: none;
+    transition: all 200ms linear;
+}
+
+@media (min-width: 576px) {
+    #banbif-header a picture > * {
+        height: 32px;
+        position: absolute;
+        left: 66px;
+        user-select: none;
+        transition: all 200ms linear;
+    }
+}
+
+/* Estilos de eslogan */
+#banbif-slogan .slogan-panel {
+    height: 101px;
+    background: none;
+    background-color: #fff;
+    margin-top: -7px;
+
+    display: grid;
+    place-content: center;
+    transition: all 200ms ease-in-out;
+}
+
+@media (min-width: 768px) {
+    #banbif-slogan .slogan-panel {
+        height: 160px;
+        background: linear-gradient(
+            270deg,
+            #0370f5 15.24%,
+            #20a6ff 71.77%,
+            #20a6ff 111.26%
+        );
+        margin-top: -7px;
+
+        position: relative;
+    }
+}
+
+#banbif-slogan .slogan-panel .slogan {
+    padding: 19px auto;
+}
+
+@media (min-width: 768px) {
+    #banbif-slogan .slogan-panel .slogan {
+        color: #fff;
+        height: 70px;
+        font-style: normal;
+        position: absolute;
+        top: 45px;
+        left: 215px;
+    }
+}
+
+#banbif-slogan .slogan-panel .slogan h1 {
+    color: #004470;
+    text-align: center;
+    margin: 0;
+    font-family: "Poppins", "Courier New", Courier, monospace;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 28px; /* 116.667% */
+}
+
+@media (min-width: 768px) {
+    #banbif-slogan .slogan-panel .slogan h1 {
+        color: #fff;
+        margin: 0;
+        font-family: "Poppins", "Courier New", Courier, serif, monospace;
+        font-size: 32px;
+        font-weight: 700;
+        text-align: start;
+        line-height: 48px;
+    }
+}
+
+#banbif-slogan .slogan-panel .slogan span {
+    color: #004470;
+    leading-trim: both;
+    text-edge: cap;
+    font-family: Lato;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 41px;
+}
+
+@media (min-width: 768px) {
+    #banbif-slogan .slogan-panel .slogan span {
+        color: #fff;
+        font-family: "Lato", "Courier New", Courier, serif, monospace;
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 41px;
+        text-align: start;
+    }
+}
+
+/* Adornos de fondo */
+.thing-1 {
+    /* -webkit-box-reflect: below; */
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+}
+
+.thing-2 {
+    position: absolute;
+    top: 258px;
+    right: 0px;
+}

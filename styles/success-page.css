@@ -1,0 +1,69 @@
+.process-info {
+    display: block;
+}
+
+.process-info h1 {
+    color: #004470;
+    text-align: center;
+    leading-trim: both;
+    text-edge: cap;
+    font-family: Lato;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 22px;
+}
+
+@media (min-width: 576px) {
+    .process-info h1 {
+        color: #004470;
+        leading-trim: both;
+        text-edge: cap;
+        margin: 0;
+        font-family: "Lato", "Courier New", Courier, monospace;
+        font-size: 29px;
+        font-style: normal;
+        font-weight: 600;
+        /* line-height: 22px; */
+    }
+}
+
+.process-info span {
+    color: #004470;
+    leading-trim: both;
+    text-edge: cap;
+    margin-top: 24px;
+    font-family: "Lato", "Courier New", Courier, monospace;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 700;
+    /* line-height: 22px; */
+}
+
+.process-info p {
+    color: rgba(0, 68, 112, 0.5);
+    margin: 0;
+    font-family: "Lato", "Courier New", Courier, monospace;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    /* line-height: 22px; */
+}
+
+.process-response p {
+    color: #004470;
+    font-family: "Lato", "Courier New", Courier, monospace;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    /* line-height: 20px; */
+}
+
+.process-response small {
+    color: rgba(0, 68, 112, 0.5);
+    font-family: "Lato", "Courier New", Courier, monospace;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    display: flex;
+}

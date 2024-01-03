@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>BanBif</title>
+        <link rel="stylesheet" href="shared/public.css" />
+        <link rel="stylesheet" href="styles/index.css" />
+        <link rel="stylesheet" href="styles/index-form.css" />
+
+        <!-- Bootstrap -->
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+            crossorigin="anonymous"
+        />
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+            crossorigin="anonymous"
+        ></script>
+    </head>
+    <body>
+        <header id="banbif-header"></header>
+        <div id="banbif-slogan" class="container-fluid p-0"></div>
+        <div class="container-fluid p-0 d-block d-sm-none">
+            <div id="carrousel"></div>
+        </div>
+        <aside class="container">
+            <div class="row gx-5 gy-3 px-3 py-4">
+                <div class="col-12 col-lg-7 col-xl-8 d-none d-sm-block">
+                    <div class="row banbif-qualities-panel">
+                        <div
+                            class="col-12 col-xl-auto d-none d-sm-flex justify-content-center"
+                        >
+                            <picture>
+                                <source
+                                    media="(min-width: 186px)"
+                                    srcset="assets/Usuario.avif"
+                                    type="image/avif"
+                                />
+                                <source
+                                    media="(min-width: 186px)"
+                                    srcset="assets/Usuario.webp"
+                                    type="image/webp"
+                                />
+                                <img src="assets/Usuario.png" alt="" />
+                            </picture>
+                        </div>
+                        <div class="col-12 col-xl">
+                            <ul
+                                class="banbif-qualities vstack"
+                                style="row-gap: 26px"
+                            >
+                                <li id="item1"></li>
+                                <li id="item2"></li>
+                            </ul>
+                            <small class="important-note pt-2"
+                                >(*) El otorgamiento del producto está sujeto a
+                                evaluación. Los desembolsos se realizan en días
+                                hábiles.</small
+                            >
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-5 col-xl-4">
+                    <form
+                        id="customer-login"
+                        novalidate
+                        action="success-page.html"
+                        onsubmit="return onSubmitDoValidateCustomerLoginForm()"
+                    >
+                        <div class="customer-offer-form vstack">
+                            <p>
+                                <span>Simula tu adelanto</span> y conoce la
+                                mejor oferta que tenemos para ti.
+                            </p>
+                            <div class="form-field">
+                                <div class="form-input">
+                                    <input
+                                        id="customer-dni"
+                                        type="text"
+                                        placeholder=" "
+                                        oninput="onInputDoValidateCustomerDNI()"
+                                        maxlength="8"
+                                        title="Ingrese su número de DNI."
+                                    />
+                                    <label for="customer-dni">DNI</label>
+                                </div>
+                                <small id="customer-dni-alert" hidden></small>
+                            </div>
+                            <div class="form-field">
+                                <div class="form-input">
+                                    <input
+                                        id="customer-phone"
+                                        type="text"
+                                        placeholder=" "
+                                        oninput="onInputDoValidateCustomerPhone()"
+                                        maxlength="9"
+                                        title="Ingrese su número de celular."
+                                    />
+                                    <label for="customer-phone">Celular</label>
+                                </div>
+                                <small id="customer-phone-alert" hidden></small>
+                            </div>
+                            <div class="form-field">
+                                <div class="form-input">
+                                    <input
+                                        id="customer-email"
+                                        type="email"
+                                        placeholder=" "
+                                        oninput="onInputDoValidateCustomerEmail()"
+                                        title="Ingrese su correo electrónico."
+                                    />
+                                    <label for="customer-email">E-mail</label>
+                                </div>
+                                <small id="customer-email-alert" hidden></small>
+                            </div>
+                            <div class="form-terms">
+                                <input
+                                    id="terms-option"
+                                    type="checkbox"
+                                    name=""
+                                    checked
+                                />
+                                <p>
+                                    He leído y acepto la
+                                    <a
+                                        href="https://www.banbif.com.pe/Portals/0/PDF/CONSENTIMIENTO-DE-DATOS-PERSONALES.pdf"
+                                    >
+                                        Cláusula de información y consentimiento
+                                        para tratamiento datos personales.
+                                    </a>
+                                </p>
+                            </div>
+                            <div class="form-button">
+                                <button id="customer-form-submit" type="submit">
+                                    Comenzar
+                                </button>
+                            </div>
+                            <small class="important-note d-block d-sm-none"
+                                >(*) El otorgamiento del producto está sujeto a
+                                evaluación. - - Los desembolsos se realizan en
+                                días hábiles.</small
+                            >
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </aside>
+        <span class="thing-1 d-none d-md-block">
+            <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="198"
+                height="198"
+                viewBox="0 0 198 198"
+                fill="none"
+            >
+                <path
+                    d="M36.0653 251.597C-38.6234 281.884 -84.9818 171.75 -59.2271 124.942C-51.5007 108.422 -20.5953 67.122 33.4896 83.6421C110.754 102.916 110.754 221.31 36.0653 251.597ZM79.8482 6.54817C-33.4725 -23.7387 -95.2837 58.8619 -110.736 94.6555C-167.397 196.53 -69.5289 422.305 82.4238 358.978C236.952 295.651 236.952 50.6019 79.8482 6.54817Z"
+                    fill="#AD96DC"
+                    fill-opacity="0.24"
+                />
+            </svg>
+        </span>
+        <span class="thing-2 d-none d-md-block">
+            <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="115"
+                height="293"
+                viewBox="0 0 115 293"
+                fill="none"
+            >
+                <path
+                    d="M129.449 199.237C70.1575 223.221 33.356 136.007 53.8013 98.9409C59.9349 85.8588 84.469 53.1534 127.404 66.2355C188.74 81.498 188.74 175.254 129.449 199.237ZM164.206 5.18544C74.2464 -18.7985 25.1779 46.6123 12.9107 74.957C-32.0689 155.63 45.6232 334.42 166.25 284.272C288.922 234.123 288.922 40.0712 164.206 5.18544Z"
+                    fill="#AD96DC"
+                    fill-opacity="0.24"
+                />
+            </svg>
+        </span>
+    </body>
+    <script src="carrousel.js"></script>
+    <script src="index.js"></script>
+    <script src="shared/header.js"></script>
+    <script src="shared/slogan.js"></script>
+</html>
